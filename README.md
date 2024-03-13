@@ -14,18 +14,16 @@ Make sure you have the following Python libraries installed:
 You can install these dependencies using the following:
 > pip install pandas numpy seaborn matplotlib scikit-learn
 
-
 ## Steps
 
 ### 1. Importing Libraries
-The necessary libraries are imported for data manipulation, visualization, and machine learning.
+The necessary libraries are imported for data manipulation, visualisation, and machine learning.
 
 > import pandas as pd  
 > import numpy as np  
 > import seaborn as sns  
 > from matplotlib import pyplot as plt  
 > from sklearn.linear_model import LinearRegression
-
 
 ### 2. Importing and Processing Data
 The dataset ('insurance.csv') is loaded and processed to extract relevant information for analysis.
@@ -42,7 +40,7 @@ The initial scatter plot of age against insurance cost is created, and prelimina
 > plt.show()  
 > plt.close()
 
-# Summarize initial findings
+# Summarise initial findings
 > We can see from this graph that there are three clear 'groups' or 'bands' of insurance cost.  
 > In order to gain a single, clear line of best fit, we will need to find the average insurance cost for each age group.
 
@@ -56,9 +54,8 @@ The data is grouped by age, and the mean insurance cost for each group is calcul
 > plt.show()  
 > plt.close()
 
-# Summarize findings
+# Summarise findings
 > We can see here that the data is much better suited to finding a single line of best fit.
-
 
 ### 5. Applying Linear Regression Modeling
 A linear regression model is applied to the refined data to establish a correlation between age and insurance cost.
@@ -71,13 +68,13 @@ A linear regression model is applied to the refined data to establish a correlat
 > y_pred = insurance_model.predict(x)
 
 ### 6. Plotting Refined Data with Linear Regression Line
-The refined data is plotted along with the linear regression line to visualize the correlation.
+The refined data is plotted along with the linear regression line to visualise the correlation.
 
 > plt.figure()  
 > sns.scatterplot(data=grouped_age_and_cost, x='age', y='charges', color='green')  
 > plt.plot(x, y_pred, label='Linear Regressor', color='red')
 
-# Customizing plot
+# Customising plot
 > plt.title('Comparing Average Insurance Cost Against Age', fontdict={'fontsize': 14})  
 > plt.xlabel('Age')  
 > plt.ylabel('Average Insurance Cost')  
@@ -87,7 +84,7 @@ The refined data is plotted along with the linear regression line to visualize t
 > plt.show()  
 > plt.close()
 
-# Summarize findings
+# Summarise findings
 > From this graph, it's clear to see that there is a correlation between age and insurance cost.  
 > The average cost of insurance for 30-year-olds is roughly 10,000, whereas this is doubled for those who are aged 65.  
 > It would be interesting to understand what type of insurance this is. I assume it's life insurance, as the likelihood of a claim will go up as age increases.  
@@ -111,7 +108,7 @@ The linear regression model is extended to predict insurance costs for ages beyo
 > sns.scatterplot(data=grouped_age_and_cost, x='age', y='charges', color='green')  
 > plt.plot(x_pred, y_pred, label='Linear Regressor', color='red')
 
-# Customizing plot
+# Customising plot
 > plt.title('Comparing Average Insurance Cost Against Age', fontdict={'fontsize': 14})  
 > plt.xlabel('Age')  
 > plt.ylabel('Average Insurance Cost')  
