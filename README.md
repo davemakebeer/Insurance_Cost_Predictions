@@ -12,9 +12,7 @@ Make sure you have the following Python libraries installed:
 - scikit-learn
 
 You can install these dependencies using the following:
-```bash
-pip install pandas numpy seaborn matplotlib scikit-learn
-```
+> pip install pandas numpy seaborn matplotlib scikit-learn
 
 ## Steps
 
