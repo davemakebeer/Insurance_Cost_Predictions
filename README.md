@@ -43,8 +43,8 @@ The initial scatter plot of age against insurance cost is created, and prelimina
 > plt.close()
 
 # Summarize initial findings
-print("- We can see from this graph that there are three clear 'groups' or 'bands' of insurance cost.")
-print("- In order to gain a single, clear line of best fit, we will need to find the average insurance cost for each age group.")
+> We can see from this graph that there are three clear 'groups' or 'bands' of insurance cost.  
+> In order to gain a single, clear line of best fit, we will need to find the average insurance cost for each age group.
 
 ### 4. Refining Data Based on Initial Findings and Replotting
 The data is grouped by age, and the mean insurance cost for each group is calculated, resulting in a refined scatter plot.
@@ -57,7 +57,7 @@ The data is grouped by age, and the mean insurance cost for each group is calcul
 > plt.close()
 
 # Summarize findings
-print("- We can see here that the data is much better suited to finding a single line of best fit.")
+> We can see here that the data is much better suited to finding a single line of best fit.
 
 
 ### 5. Applying Linear Regression Modeling
@@ -88,10 +88,10 @@ The refined data is plotted along with the linear regression line to visualize t
 > plt.close()
 
 # Summarize findings
-print("- From this graph, it's clear to see that there is a correlation between age and insurance cost.")
-print("- The average cost of insurance for 30-year-olds is roughly 10,000, whereas this is doubled for those who are aged 65.")
-print("- It would be interesting to understand what type of insurance this is. I assume it's life insurance, as the likelihood of a claim will go up as age increases.")
-print("- It can be said with a degree of confidence that it's not car insurance.")
+> From this graph, it's clear to see that there is a correlation between age and insurance cost.  
+> The average cost of insurance for 30-year-olds is roughly 10,000, whereas this is doubled for those who are aged 65.  
+> It would be interesting to understand what type of insurance this is. I assume it's life insurance, as the likelihood of a claim will go up as age increases.  
+> It can be said with a degree of confidence that it's not car insurance.
 
 ### 7. Extending Linear Regressor to Make Predictions Beyond Gathered Data
 The linear regression model is extended to predict insurance costs for ages beyond the gathered data.
@@ -128,7 +128,7 @@ The linear regression model is extended to predict insurance costs for ages beyo
 > pred_90 = format(float(insurance_model.predict(unknown_c)), '.2f')  
 > pred_100 = format(float(insurance_model.predict(unknown_d)), '.2f')
 
-print("Predicted insurance costs by age:")
+> Predicted insurance costs by age:  
 > print(f"70 = {pred_70}")  
 > print(f"80 = {pred_80}")  
 > print(f"90 = {pred_90}")  
